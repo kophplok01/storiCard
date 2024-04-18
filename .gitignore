@@ -1,0 +1,7 @@
+.idea/
+.pytest_cache/
+.venv/
+results/
+screenshots/
+chromedriver.exe
+operadriver.exe
