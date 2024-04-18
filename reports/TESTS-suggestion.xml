@@ -1,0 +1,94 @@
+<testsuite name="suggestion.Testing Suggestion Input" tests="7" errors="0" failures="0" skipped="0" time="70.246948" timestamp="2024-04-19T01:01:25.040753" hostname="P2301160"><testcase classname="suggestion.Testing Suggestion Input" name="No suggestions are displayed when typing less than two letters" status="passed" time="9.050946"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @less-than-two-letters
+  Scenario: No suggestions are displayed when typing less than two letters
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.942s
+    When the user type "U" into the suggestion input ... passed in 0.085s
+    Then the user should not see any suggestions ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Suggestions are displayed when typing at least two letters" status="passed" time="7.46548"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @at-least-two-letters
+  Scenario: Suggestions are displayed when typing at least two letters
+    Given the user is able to open the "chrome" browser on "desktop" resolution in "dev" environment ... passed in 7.267s
+    When the user type "Un" into the suggestion input ... passed in 0.183s
+    Then the user should see a list of suggestions ... passed in 0.016s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Suggestions are filtered based on input -- @1.1 " status="passed" time="8.960953"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @filtered-suggestions
+  Scenario Outline: Suggestions are filtered based on input -- @1.1 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 8.168s
+    When the user type "Un" into the suggestion input ... passed in 0.174s
+    Then the user should see suggestions containing "United States (USA)" ... passed in 0.619s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Suggestions are filtered based on input -- @1.2 " status="passed" time="11.599425"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @filtered-suggestions
+  Scenario Outline: Suggestions are filtered based on input -- @1.2 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 10.802s
+    When the user type "Un" into the suggestion input ... passed in 0.181s
+    Then the user should see suggestions containing "United Kingdom (UK)" ... passed in 0.616s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Selecting a suggestion" status="passed" time="13.85249"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @selecting-suggestion
+  Scenario: Selecting a suggestion
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 12.981s
+    When the user type "Un" into the suggestion input ... passed in 0.182s
+    And the user select "United States" from the suggestions ... passed in 0.665s
+    Then the suggestion input should contain "United States" ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Clearing the input field" status="passed" time="8.539548"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @clearing-input-field
+  Scenario: Clearing the input field
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 8.246s
+    When the user type "Un" into the suggestion input ... passed in 0.232s
+    And the user clear the suggestion input ... passed in 0.042s
+    Then the suggestion input should be empty ... passed in 0.019s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="suggestion.Testing Suggestion Input" name="Handling special characters" status="passed" time="10.778108"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @handling-special-characters
+  Scenario: Handling special characters
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 10.577s
+    When the user type special characters into the suggestion input ... passed in 0.180s
+    Then the user should not see any suggestions ... passed in 0.021s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

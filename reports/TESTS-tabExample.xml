@@ -1,0 +1,25 @@
+<testsuite name="tabExample.Switch tabExample" tests="1" errors="0" failures="1" skipped="0" time="19.126606" timestamp="2024-04-19T01:01:47.787912" hostname="P2301160"><testcase classname="tabExample.Switch tabExample" name="Clicking a new tab Button and see the expected view" status="failed" time="19.126606"><failure type="AssertionError" message="El botón no está presente en la nueva pestaña">
+<![CDATA[
+Failing step: Then the user should be able to see the expected button ... failed in 10.407s
+Location: features/tabExample.feature:9
+Assertion Failed: El botón no está presente en la nueva pestaña
+Captured stdout:
+El botón no está presente en la nueva pestaña]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @new-tab-expected
+  Scenario: Clicking a new tab Button and see the expected view
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.512s
+    When the user clicks the "Open tab" button ... passed in 0.208s
+    Then the user should be able to see the expected button ... failed in 10.407s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+El botón no está presente en la nueva pestaña
+
+]]>
+</system-out></testcase></testsuite>

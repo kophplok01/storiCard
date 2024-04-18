@@ -1,0 +1,21 @@
+<testsuite name="iframe.iframe" tests="1" errors="0" failures="0" skipped="0" time="8.446495" timestamp="2024-04-19T00:57:45.657690" hostname="P2301160"><testcase classname="iframe.iframe" name="Search for specific text  in an iframe" status="passed" time="8.446495"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Search for specific text  in an iframe
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.268s
+    When I switch to the iframe ... passed in 0.142s
+    Then the user search for an specific text ... passed in 0.036s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Cambió correctamente al iframe con ID 'courses-iframe'
+Odd: Rahul Shetty is a pioneer and authority in software testing space.
+Odd: All our courses are based on Real Time Project based where you learn real skill which are readily transferable to your work project.
+Odd: Life time access, Learn at your own pace and updates are Free for Life.
+Odd: His mentorship program is most after in the software testing community with long waiting period.
+Odd: Lot of companies have already benefited from our consulting services.
+
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,42 @@
+<testsuite name="people.Print Names from Fixed Header Web Table" tests="2" errors="0" failures="0" skipped="0" time="19.443519" timestamp="2024-04-19T00:59:30.721825" hostname="P2301160"><testcase classname="people.Print Names from Fixed Header Web Table" name="Print names of all people by his position -- @1.1 " status="passed" time="10.325285"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @people-info
+  Scenario Outline: Print names of all people by his position -- @1.1 
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 10.092s
+    Then the user is able to print all the "Engineer" names ... passed in 0.233s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Se encontraron 2 personas con la posición de Engineer
+Nombre: Alex
+Ciudad: Chennai
+--------------------
+Nombre: Jack
+Ciudad: Pune
+--------------------
+
+]]>
+</system-out></testcase><testcase classname="people.Print Names from Fixed Header Web Table" name="Print names of all people by his position -- @1.2 " status="passed" time="9.118234"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @people-info
+  Scenario Outline: Print names of all people by his position -- @1.2 
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.943s
+    Then the user is able to print all the "Businessman" names ... passed in 0.175s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Se encontraron 1 personas con la posición de Businessman
+Nombre: Raymond
+Ciudad: Mumbai
+--------------------
+
+]]>
+</system-out></testcase></testsuite>

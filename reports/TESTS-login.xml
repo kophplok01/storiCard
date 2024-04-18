@@ -1,0 +1,49 @@
+<testsuite name="login.Home page for visitors and users" tests="4" errors="0" failures="0" skipped="0" time="45.325855" timestamp="2024-04-19T00:58:58.681169" hostname="P2301160"><testcase classname="login.Home page for visitors and users" name="User is able to login and logout in different browsers on desktop resolution -- @1.1 " status="passed" time="8.591889"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @home-page-desktop
+  Scenario Outline: User is able to login and logout in different browsers on desktop resolution -- @1.1 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 8.328s
+    Then the user is logged in as a "devTestUser1" ... passed in 0.264s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Home page for visitors and users" name="User is able to login and logout in different browsers on desktop resolution -- @1.2 " status="passed" time="13.155133"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @home-page-desktop
+  Scenario Outline: User is able to login and logout in different browsers on desktop resolution -- @1.2 
+    Given the user is able to open the "firefox" browser on "<desktop>" resolution in "dev" environment ... passed in 12.978s
+    Then the user is logged in as a "devTestUser1" ... passed in 0.177s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Home page for visitors and users" name="User is able to login and logout in different browsers on mobile resolution -- @1.1 " status="passed" time="8.36786"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @home-page-mobile
+  Scenario Outline: User is able to login and logout in different browsers on mobile resolution -- @1.1 
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.096s
+    Then the user is logged in as a "devTestUser1" ... passed in 0.272s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Home page for visitors and users" name="User is able to login and logout in different browsers on mobile resolution -- @1.2 " status="passed" time="15.210973"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @home-page-mobile
+  Scenario Outline: User is able to login and logout in different browsers on mobile resolution -- @1.2 
+    Given the user is able to open the "firefox" browser on "mobile" resolution in "dev" environment ... passed in 15.034s
+    Then the user is logged in as a "devTestUser1" ... passed in 0.177s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

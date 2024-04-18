@@ -1,0 +1,40 @@
+<testsuite name="exampleDropdown.Dropdown Selection" tests="3" errors="0" failures="0" skipped="0" time="25.68415" timestamp="2024-04-19T00:57:30.926549" hostname="P2301160"><testcase classname="exampleDropdown.Dropdown Selection" name="user can choose between the multiple option that the dropdown has -- @1.1 " status="passed" time="8.286959"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dropdown-options
+  Scenario Outline: user can choose between the multiple option that the dropdown has -- @1.1 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 8.044s
+    When the user selects the "Option1" option from the example dropdown ... passed in 0.194s
+    Then the option selected is "Option1" ... passed in 0.049s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="exampleDropdown.Dropdown Selection" name="user can choose between the multiple option that the dropdown has -- @1.2 " status="passed" time="8.072009"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dropdown-options
+  Scenario Outline: user can choose between the multiple option that the dropdown has -- @1.2 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 7.837s
+    When the user selects the "Option2" option from the example dropdown ... passed in 0.180s
+    Then the option selected is "Option2" ... passed in 0.054s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="exampleDropdown.Dropdown Selection" name="user can choose between the multiple option that the dropdown has -- @1.3 " status="passed" time="9.325182"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dropdown-options
+  Scenario Outline: user can choose between the multiple option that the dropdown has -- @1.3 
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 9.096s
+    When the user selects the "Option3" option from the example dropdown ... passed in 0.180s
+    Then the option selected is "Option3" ... passed in 0.050s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

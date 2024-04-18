@@ -1,7 +1,6 @@
 .idea/
 .pytest_cache/
+.__pycache__/
 .venv/
-results/
-screenshots/
 chromedriver.exe
 operadriver.exe

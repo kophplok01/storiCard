@@ -1,0 +1,45 @@
+<testsuite name="courses.Course Pricing Information" tests="2" errors="0" failures="0" skipped="0" time="18.651918" timestamp="2024-04-19T00:56:45.407797" hostname="P2301160"><testcase classname="courses.Course Pricing Information" name="Print information for courses -- @1.1 " status="passed" time="9.212616"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @courses-by-price
+  Scenario Outline: Print information for courses -- @1.1 
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.990s
+    Then the user can print the number of courses priced at "25" ... passed in 0.223s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Se encontraron 4 cursos con precio de $25
+Nombre del profesor: Rahul Shetty
+Nombre del curso: Learn SQL in Practical + Database Testing from Scratch
+--------------------
+Nombre del profesor: Rahul Shetty
+Nombre del curso: Learn JMETER from Scratch - (Performance + Load) Testing Tool
+--------------------
+Nombre del profesor: Rahul Shetty
+Nombre del curso: QA Expert Course :Software Testing + Bugzilla + SQL + Agile
+--------------------
+Nombre del profesor: Rahul Shetty
+Nombre del curso: Master Selenium Automation in simple Python Language
+--------------------
+
+]]>
+</system-out></testcase><testcase classname="courses.Course Pricing Information" name="Print information for courses -- @1.2 " status="passed" time="9.439302"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @courses-by-price
+  Scenario Outline: Print information for courses -- @1.2 
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 9.298s
+    Then the user can print the number of courses priced at "15" ... passed in 0.141s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Se encontraron 0 cursos con precio de $15
+
+]]>
+</system-out></testcase></testsuite>

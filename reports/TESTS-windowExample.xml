@@ -1,0 +1,17 @@
+<testsuite name="windowExample.Switch windowExample" tests="1" errors="0" failures="1" skipped="0" time="19.91365" timestamp="2024-04-19T01:02:10.084482" hostname="P2301160"><testcase classname="windowExample.Switch windowExample" name="Clicking a Button and Opening Another window" status="failed" time="19.91365"><failure type="AssertionError" message="El texto '30 day money back guarantee' no está presente en la nueva ventana.">
+<![CDATA[
+Failing step: Then the user should be able to see the expected text ... failed in 10.292s
+Location: features/windowExample.feature:6
+Assertion Failed: El texto '30 day money back guarantee' no está presente en la nueva ventana.]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Clicking a Button and Opening Another window
+    Given the user is able to open the "chrome" browser on "<desktop>" resolution in "dev" environment ... passed in 9.337s
+    When the user clicks the "Open Window" button ... passed in 0.285s
+    Then the user should be able to see the expected text ... failed in 10.292s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

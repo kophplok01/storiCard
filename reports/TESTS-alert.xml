@@ -1,0 +1,36 @@
+<testsuite name="alert.Feature: Handling alerts" tests="2" errors="0" failures="0" skipped="0" time="20.517925" timestamp="2024-04-19T00:56:14.031802" hostname="P2301160"><testcase classname="alert.Feature: Handling alerts" name="Handling alert dialog" status="passed" time="11.6819"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @alert-dialog
+  Scenario: Handling alert dialog
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 11.530s
+    When the user types "Stori Card" and clicks the "alert" button ... passed in 0.146s
+    Then the user prints the text in the alert and clicks on OK ... passed in 0.006s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Texto en la alerta: Hello Stori Card, share this practice page and share your knowledge
+
+]]>
+</system-out></testcase><testcase classname="alert.Feature: Handling alerts" name="Handling confirm dialog" status="passed" time="8.836025"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @confirm-dialog
+  Scenario: Handling confirm dialog
+    Given the user is able to open the "chrome" browser on "mobile" resolution in "dev" environment ... passed in 8.563s
+    When the user types "Stori Card" and clicks the "confirm" button ... passed in 0.255s
+    Then the user prints the text in the confirm alert ... passed in 0.005s
+    And the user confirms that the alert text is equal to "Hello Stori Card, Are you sure you want to confirm?" and then click ok ... passed in 0.013s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Texto en la alerta: Hello Stori Card, Are you sure you want to confirm?
+
+]]>
+</system-out></testcase></testsuite>
