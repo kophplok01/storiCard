@@ -39,7 +39,7 @@ To run only a specific case/feature, use a tag by adding 'features -t tagName' a
 behave -f allure_behave.formatter:AllureFormatter -o reports/ features -t people-info  
 ```
 
-After running that command, the execution report in JSON format will be generated and saved in a folder called 'reports'. To view the HTML version, run:
+After running that command, the execution report in JSON format will be generated and saved in a folder called `results`. To view the HTML version, run:
 
 ```bash
 allure serve reports
@@ -73,6 +73,14 @@ behave -f allure_behave.formatter:AllureFormatter -o reports/ features -t home-p
 ## About Allure
 
 Allure is a tool for test reporting that generates interactive and comprehensive reports. It provides insights into test execution, including statistics, trends, and graphs.
+
+## Generating XML Reports with JUnit
+If you need to generate XML reports compatible with JUnit for integration with other testing tools or systems, you can use the following command:
+```bash
+behave -f junit --junit
+```
+This command will generate XML reports in the `reports` directory, which can then be used for further analysis or integration with CI/CD pipelines.
+
 
 ## Troubleshooting
 
